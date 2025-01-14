@@ -10,6 +10,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       home: Scaffold(
+        // backgroundColor: Colors.brown[600],
         body: Center(  
          child: Container(
             height: 400,
