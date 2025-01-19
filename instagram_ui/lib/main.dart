@@ -10,6 +10,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.white,
           title: Text(
             "Instagram",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
@@ -26,7 +27,7 @@ class MainApp extends StatelessWidget {
             children: [
               Container(
                 height: 150,
-                // color: Colors.blue,
+                color: Colors.white,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 7,
@@ -59,6 +60,7 @@ class MainApp extends StatelessWidget {
               ),
               Container(
                 height: 600,
+                color: Colors.white,
                 child: ListView.builder(
                   // physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
@@ -87,6 +89,7 @@ class MainApp extends StatelessWidget {
                               SizedBox(width: 15),
                               Container(
                                 width: 250,
+                                color: Colors.white,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -118,13 +121,14 @@ class MainApp extends StatelessWidget {
                         ),
                         Container(
                           height: 400,
+                          // color: Colors.white,
                           child: Image.network("https://images.pexels.com/photos/165754/pexels-photo-165754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                           fit: BoxFit.cover,
                           ),
                         ),
                         Container(
                           padding: EdgeInsets.all(12),
-                          // color: Colors.amber,
+                          color: Colors.white,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -148,6 +152,7 @@ class MainApp extends StatelessWidget {
                           ),
                         ),
                         Container(
+                          color: Colors.white,
                           padding: EdgeInsets.only(left: 18, top: 10,bottom: 15),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
